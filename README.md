@@ -60,7 +60,7 @@ Evaluates Jira Outcome tickets against four quality gates and produces a structu
 #### What happens when you say "rate the outcomes"
 
 1. Claude Code prompts for your **Jira base URL** and **Personal Access Token (PAT)**.
-2. It fetches all open `Outcome` issues from the `HCMSTRAT` project (default JQL; you can override).
+2. It fetches all open `Outcome` issues from the `based project` project (default JQL; you can override).
 3. It rates each ticket against the four closing gates (see below).
 4. It writes results to **`outcome-ratings-YYYYMMDD.md`** in your working directory.
 
