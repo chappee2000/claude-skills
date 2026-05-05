@@ -94,11 +94,29 @@ Suggested next step: Close ticket; underlying need may resurface in roadmap plan
 
 ---
 
+## Repository Structure
+
+Each skill lives in its own directory alongside a pre-built `.skill` file (zip archive) for easy installation:
+
+```
+claude-skills/
+├── outcome-rater/
+│   └── SKILL.md          # skill source — edit this
+├── outcome-rater.skill    # installable zip — regenerate after edits
+└── README.md
+```
+
 ## Contributing
 
 Skills are plain `.skill` files (zip archives containing a `SKILL.md`). To add a new skill:
 
 1. Create a directory named after your skill, e.g. `my-skill/`.
 2. Write `my-skill/SKILL.md` following the same front-matter + instructions format as `outcome-rater`.
-3. Zip it: `zip my-skill.skill my-skill/SKILL.md`
-4. Open a PR adding the `.skill` file and a row in the table above.
+3. Build the installable: `zip my-skill.skill my-skill/SKILL.md`
+4. Open a PR adding both the source directory and the `.skill` file, plus a row in the table above.
+
+To update an existing skill, edit its `SKILL.md` then rebuild:
+
+```bash
+zip outcome-rater.skill outcome-rater/SKILL.md
+```
