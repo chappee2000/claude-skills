@@ -1,34 +1,5 @@
 # Backlog Purge Skill - Installation Guide
 
-## To Answer Your Question: `.skill` Files vs Directory Structure
-
-**Claude Code skills are NOT `.skill` files.**
-
-✅ **Correct format:**
-```
-~/.claude/skills/backlog-purge/
-└── skill.md  ← Required file
-```
-
-❌ **NOT a format:**
-```
-~/.claude/skills/backlog-purge.skill  ← Doesn't exist in Claude Code
-```
-
-**Why `.tar.gz`?** It's just a compressed archive of the directory structure. When extracted, it creates the correct `backlog-purge/` directory with a `skill.md` file inside.
-
----
-
-## 📦 Package Location
-
-```
-/Users/crystallevy/outcome-rating/backlog-purge-skill-v1.0.0.tar.gz
-```
-
-**Size:** 19KB | **Version:** 1.0.0 | **Release:** 2026-05-05
-
----
-
 ## 🚀 Installation (3 Ways)
 
 ### Option 1: Install Script (Easiest) ⭐
@@ -100,17 +71,6 @@ ls ~/.claude/skills/backlog-purge/skill.md
 
 ### 1. Jira Filter Creation (Answers Your Other Question)
 
-**YES - The skill automatically creates Jira filters!**
-
-```
-✅ Jira filters created!
-   - Filter 109048: Backlog Purge - Close Now (152 items)
-     URL: https://redhat.atlassian.net/issues/?filter=109048
-   
-   - Filter 109049: Backlog Purge - CVEs for Discussion (44 items)
-     URL: https://redhat.atlassian.net/issues/?filter=109049
-```
-
 Filters are:
 - ✅ Automatically created in your Jira instance
 - ✅ Marked as favorite (easy to find)
@@ -123,27 +83,8 @@ Filters are:
 - Velocity insights (Markdown)
 
 ### 3. Data-Driven Scoring
-- 100% precision (0 false positives tested)
 - Adapts to your team's velocity
 - Protects active work
-
----
-
-## 📤 Sharing the Skill
-
-**Send the tarball to teammates:**
-```
-/Users/crystallevy/outcome-rating/backlog-purge-skill-v1.0.0.tar.gz
-```
-
-**They install with:**
-```bash
-tar -xzf backlog-purge-skill-v1.0.0.tar.gz
-cd backlog-purge/
-./install.sh
-```
-
-**Completely generic** - works for any team, any Jira project!
 
 ---
 
@@ -164,9 +105,6 @@ cat ~/.claude/skills/backlog-purge/QUICKSTART.md
 ---
 
 ## ❓ FAQ
-
-### Is it a `.skill` file?
-**No.** Claude Code uses directories with `skill.md` files, not `.skill` archives.
 
 ### Does it create Jira filters?
 **YES!** Two filters auto-created per run (Close Now + CVEs/Discuss).
