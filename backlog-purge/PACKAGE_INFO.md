@@ -1,13 +1,5 @@
 # Backlog Purge Skill - Installable Package
 
-## 📦 Package Location
-
-```
-/Users/crystallevy/outcome-rating/backlog-purge-skill-v1.0.0.tar.gz
-```
-
-**Size:** 19KB (compressed)
-
 ---
 
 ## 📋 What's Included
@@ -141,29 +133,6 @@ cat ~/.claude/skills/backlog-purge/INSTALL.md
 
 ---
 
-## 🤝 Share With Your Team
-
-**To share the skill:**
-
-1. **Share the tarball:**
-   ```bash
-   # Send this file
-   ~/outcome-rating/backlog-purge-skill-v1.0.0.tar.gz
-   ```
-
-2. **Recipients install:**
-   ```bash
-   tar -xzf backlog-purge-skill-v1.0.0.tar.gz -C ~/.claude/skills/
-   ```
-
-3. **Everyone can use it:**
-   ```
-   /backlog-purge
-   ```
-
-**Generic:** Works for any team in any Jira project!
-
----
 
 ## ❓ Common Questions
 
