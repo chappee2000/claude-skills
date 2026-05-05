@@ -350,33 +350,6 @@ If using non-standard types (e.g., "Requirement", "Defect"):
 
 ---
 
-## Real-World Example
-
-### Team: Hybrid Cloud Console (7 people)
-
-**Before Purge:**
-- Backlog: 248 items
-- Age distribution: 40% >1 year old
-- Velocity: 50 items/month
-- Capacity: 300 items (6 months)
-- Feeling: "Our backlog is overwhelming"
-
-**After Running Skill:**
-- Recommended for closure: 196 items
-- Evaluated in session 1: 70 items
-  - Closed: 58 items (83%)
-  - Needs investigation: 12 items (17%)
-- Backlog: 189 items (24% reduction)
-- New capacity: 4 months of work (healthy)
-
-**Team Feedback:**
-- "100% of items we reviewed were valid closure candidates"
-- "CVE detection was perfect - saved us from accidentally closing security work"
-- "Needs Investigation flag helped us avoid snap decisions"
-- "Velocity analysis showed us we don't need a 2-year backlog"
-
----
-
 ## Files Created
 
 All outputs saved to current working directory:
@@ -397,35 +370,6 @@ All outputs saved to current working directory:
 ```
 
 ---
-
-## Next Steps After Running
-
-### 1. **Review Results (30 min)**
-- Check velocity metrics - does it match your intuition?
-- Review top 20 "Close Now" items - do they make sense?
-- Scan for any active work in closure list (should be 0)
-
-### 2. **Schedule Purge Session (1-2 hours)**
-- Invite: Team lead, 1-2 engineers, product manager
-- Review CVEs first (typically fast)
-- Work through "Close Now" list oldest-first
-- Flag "Needs Investigation" items with due dates
-
-### 3. **Bulk Close Items (15-30 min)**
-- Use Jira filter for bulk operations
-- Select all → Bulk Change → Close
-- Choose resolution: "Won't Do" or "Obsolete"
-- Add comment: "Closed during Q2 2026 backlog purge"
-
-### 4. **Assign Investigations (15 min)**
-- For "Needs Investigation" items
-- Create investigation tasks
-- Set reminders before due dates
-
-### 5. **Track Progress**
-- Save velocity metrics for team retrospectives
-- Re-run quarterly to measure backlog hygiene improvement
-- Celebrate: "We reduced our backlog by 24%!"
 
 ---
 
@@ -481,9 +425,6 @@ All outputs saved to current working directory:
 **Cause:** Old CVEs may need security review  
 **Fix:** This is expected. Schedule security review session for CVE decisions.
 
-### Jira filter creation fails
-**Cause:** PAT lacks permission to create filters  
-**Fix:** Manually create filters using JQL from CSV output
 
 ---
 
