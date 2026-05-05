@@ -15,7 +15,7 @@ A data-driven, reusable skill for analyzing any Jira team's backlog and identify
 
 # 3. Provide when prompted:
 - Team JQL query (e.g., project = MYPROJ AND team = "Alpha Team")
-- Jira base URL (default: https://redhat.atlassian.net)
+- Jira base URL (default: https://company.atlassian.net)
 - Your email
 - Your Jira Personal Access Token (PAT)
 ```
