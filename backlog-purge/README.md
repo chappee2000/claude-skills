@@ -441,6 +441,6 @@ All outputs saved to current working directory:
 
 ## License & Credits
 
-Built for backlog hygiene at scale. Tested on Red Hat Hybrid Cloud Management teams.
+Built for backlog hygiene at scale.
 
 **Philosophy:** Data-driven decisions over gut feel. Velocity-adjusted thresholds over arbitrary rules.
